@@ -8,7 +8,7 @@ class FlatFlats(models.Model):
     _inherit = ['mail.thread', 'mail.activity.mixin']
     _rec_name = 'name'
 
-    name = fields.Char('Names for flat', required=True)
+    name = fields.Char('Names of the flat ', required=True)
     description = fields.Char(string='Description', help='Description for the flat')
     amount = fields.Float(string='Amount')
     flat_id = fields.Many2one('flat.management', string="Flat")
